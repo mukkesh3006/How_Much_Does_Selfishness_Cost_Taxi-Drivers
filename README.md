@@ -1,6 +1,6 @@
 # How much does selfishness cost taxi drivers?
 Efficiency of decentralized taxi positioning on stylized cities, and learning unknown demand.
-*Foundations of AI and Multiagent Systems — final project.* Report: [`report/main.pdf`](report/main.pdf).
+*Foundations of AI and Multiagent Systems — final project.* Report: [`report/main.pdf`](report.pdf).
 
 **Question.** `n` drivers each pick a demand zone of a city graph (or stay idle). How much welfare is lost at the selfish
 (Nash) outcome compared with a coordinating dispatcher, how does that depend on demand concentration, driver density,
@@ -13,14 +13,14 @@ assignment (Hungarian). Primary metric: efficiency loss `1 − W_EQ / W_OPT`.
 ## Headline results (all produced by this code)
 | | |
 |---|---|
-| ![](figures/fig1_concentration.png) | Loss rises with demand concentration and driver density; topology only matters for ρ ≥ 2 |
-| ![](figures/fig2_heatmap.png) | Joint effect of concentration (α, H) and density (ρ) |
-| ![](figures/fig3_coverage_idling.png) | Mechanism: selfish drivers over-enter and under-cover |
-| ![](figures/fig4_kappa.png) | Travel-cost scale κ: non-monotone |
-| ![](figures/fig6_equity.png) | Equity (idea-review check): the optimum is efficient but far less equal than the equilibrium (report Fig. 4) |
-| ![](figures/fig5_learning.png) | Unknown demand: learning is cheap for a dispatcher, selfishness is the main cost |
+| ![](taxi_poa/figures/fig1_concentration.png) | Loss rises with demand concentration and driver density; topology only matters for ρ ≥ 2 |
+| ![](taxi_poa/figures/fig2_heatmap.png) | Joint effect of concentration (α, H) and density (ρ) |
+| ![](taxi_poa/figures/fig3_coverage_idling.png) | Mechanism: selfish drivers over-enter and under-cover |
+| ![](taxi_poa/figures/fig4_kappa.png) | Travel-cost scale κ: non-monotone |
+| ![](taxi_poa/figures/fig6_equity.png) | Equity (idea-review check): the optimum is efficient but far less equal than the equilibrium (report Fig. 4) |
+| ![](taxi_poa/figures/fig5_learning.png) | Unknown demand: learning is cheap for a dispatcher, selfishness is the main cost |
 
-Screenshots of the code running: [tests](docs/screenshot_tests.png) · [analysis tables](docs/screenshot_analysis.png) · [exact equilibrium enumeration](docs/screenshot_enumeration.png)
+Screenshots of the code running: [tests](taxi_poa/docs/screenshot_tests.png) · [analysis tables](taxi_poa/docs/screenshot_analysis.png) · [exact equilibrium enumeration](taxi_poa/docs/screenshot_enumeration.png)
 
 ## Quick start
 ```bash
